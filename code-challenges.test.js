@@ -91,9 +91,7 @@ describe ("remainderThree", ()=>{
 const remainderThree = (array) => {
     return array.filter((elem)=>{
         return typeof elem === "number"
-    }).map((elem)=>{
-        return elem % 3;
-    })
+    }).map((elem)=> elem % 3)
 }
 
 
@@ -129,7 +127,5 @@ describe ("cubed", ()=>{
 */
 
 const cubed = (array) => {
-    return array.reduce((acc, current) => {
-        return acc += Math.pow(current, 3);
-    }, 0);
+    return array.reduce((acc, current) => acc += Math.pow(current, 3), 0);
 }
